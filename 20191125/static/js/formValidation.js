@@ -108,8 +108,8 @@ $("#btnsave").click(function(e) {
 		'provinceId': provinceId,
 		'cityId': cityId,
 		'dealerId': storesId,
-		'seriesId': 6,
-		'activity': 606,
+		'seriesId': 36,
+		'activity': 756,
 		'projectName': 'laluola1126',
 		driveTime: regi_date,
 		orderTime: buyDate,
@@ -120,7 +120,7 @@ $("#btnsave").click(function(e) {
 		type:"post",
 		dataType: "json",
 		contentType: "application/json; charset=utf-8",
-		url: "http://ab.t5a.cn/api/activity/rongfang/jd",
+		url: "http://ab.t5a.cn/api/activity/toyota",
 		data: JSON.stringify(payload),
 		success: function (data, textstatus, xhr) {
 			if (xhr.status == 200) {
