@@ -113,7 +113,8 @@ $("#btnsave").click(function(e) {
 		'projectName': 'laluola1126',
 		driveTime: regi_date,
 		orderTime: buyDate,
-		sex: sex
+		sex: sex,
+		tokenName: 'toyota20191125'
 	}
 	
 	$.ajax({
