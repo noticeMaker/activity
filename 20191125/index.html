@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>新拉罗卡</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../common/js/laydate.js"></script>
+	<script type="text/javascript" src="../common/js/lazyload.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../common/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/index.css">
+</head>
+
+<body>
+	<div id='main' class="main">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src='./static/imgs/banner_1.jpg'>
+				</div>
+				<div class="swiper-slide"><img src='./static/imgs/banner_2.jpg'></div>
+				<div class="swiper-slide"><img src='./static/imgs/banner_3.jpg'></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<img class='img-style' style="margin-top: -2px;" src='./static/imgs/flow_01.jpg'>
+		<img class='img-style' src='./static/imgs/flow_02.jpg'>
+		<div class="register-warp">
+			<div class="register-panel">
+				<div class="register-row">
+					<input id='name' class="register-input" placeholder="姓名">
+					<div class="register-input hasTriangle">
+						<select id='sex' class="register-select">
+							<option value="0">称谓</option>
+							<option value="先生">先生</option>
+							<option value="女士">女士</option>
+						</select>
+					</div>
+					<input id='mobile' class="register-input flex-1" placeholder="手机">
+				</div>
+				<div class='regist-message'>
+					选择离你最近的经销商
+				</div>
+				<div class="register-row mg-b-30">
+					<div class="register-input hasTriangle">
+						<select class="register-select" id="ftms_province">
+							<option value="0">请选择省份</option>
+						</select>
+					</div>
+					<div class="register-input hasTriangle">
+						<select class="register-select" id="ftms_city">
+							<option value="0">请选择市/区</option>
+						</select>
+					</div>
+					<div class="register-input hasTriangle flex-1">
+						<select class="register-select" id="ftms_dealer">
+							<option value="0">请选择经销商</option>
+						</select>
+					</div>
+				</div>
+				<div class="register-row mg-b-30">
+					<div class="register-input hasTriangle flex-1">
+						<input id="regi_date" class="register-input flex-1" readonly placeholder="请选择预约时间">
+					</div>
+					<div class="register-input hasTriangle flex-1">
+						<input id="buy_date" class="register-input flex-1" readonly placeholder="请选择计划的购车时间">
+					</div>
+				</div>
+				
+				<div class="policy mg-b-10">
+					<input id="sel" type="checkbox" checked="">
+					<span class='textSign' id="open_btn">我已阅读并同意《隐私政策》里的各项内容</span>
+				</div>
+				<div>
+					<button id="btnsave">马上预约</button>
+				</div>
+			</div>
+		</div>
+		<img class='img-style' src='./static/imgs/flow_04.jpg'>
+
+		<div class='video-warp'>
+			<div class="video-bg">
+				<div class="swiper-container-video gallery-top">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<video preload="none" controls="controls" src="./static/video/01.mp4" poster="./static/video/01.jpeg"></video>
+						</div>
+						<div class="swiper-slide">
+							<video preload="none" controls="controls" src="./static/video/02.mp4" poster="./static/video/02.jpeg"></video>
+						</div>
+						<div class="swiper-slide">
+							<video preload="none" controls="controls" src="./static/video/03.mp4" poster="./static/video/03.jpeg"></video>
+						</div>
+						<div class="swiper-slide">
+							<video preload="none" controls="controls" src="./static/video/04.mp4" poster="./static/video/04.jpeg"></video>
+						</div>
+						<div class="swiper-slide">
+							<video preload="none" controls="controls" src="./static/video/05.mp4" poster="./static/video/05.jpeg"></video>
+						</div>
+						<div class="swiper-slide">
+							<video preload="none" controls="controls" src="./static/video/06.mp4" poster="./static/video/06.png"></video>
+						</div>
+						<div class="swiper-slide">
+							<video preload="none" controls="controls" src="./static/video/07.mp4" poster="./static/video/07.png"></video>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-container-video gallery-thumbs">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src='./static/video/01.jpeg'></div>
+						<div class="swiper-slide"><img src='./static/video/02.jpeg'></div>
+						<div class="swiper-slide"><img src='./static/video/03.jpeg'></div>
+						<div class="swiper-slide"><img src='./static/video/04.jpeg'></div>
+						<div class="swiper-slide"><img src='./static/video/05.jpeg'></div>
+						<div class="swiper-slide"><img src='./static/video/06.png'></div>
+						<div class="swiper-slide"><img src='./static/video/07.png'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<img class='img-style lazy' data-src='./static/imgs/flow_06.jpg'>
+		<img class='img-style lazy' data-src='./static/imgs/flow_07.jpg'>
+		<img class='img-style lazy' data-src='./static/imgs/flow_08.jpg'>
+		<img class='img-style lazy' data-src='./static/imgs/flow_09.jpg'>
+		<img class='img-style lazy' data-src='./static/imgs/flow_10.jpg'>
+		<img class='img-style lazy' data-src='./static/imgs/flow_11.jpg'>
+		<div class='car-setting'>
+			<div class="setting-context">
+				<div class="setting-scroll">
+					<img class='lazy' style='width:2200px;' data-src='./static/imgs/config.jpg'>
+				</div>
+			</div>
+		</div>
+		<!-- 内容开始 -->
+
+		<div id='open_btn'>隐私协议</div>
+	</div>
+
+	<div id="modal" class="back modal-public">
+		
+		<div id="modal-closePanel" class='modal-closePanel'>
+			<span id="close-button" class='close-button'>返回</span>
+			<h1 class="close-title">隐私政策</h1>
+		</div>
+		<div class="modal-content">
+			<h1 class='mg-b-30'>一汽丰田顾客个人信息保护基本方针</h1>
+			<p class='mg-b-30'>一汽丰田汽车销售有限公司(以下简称“一汽丰田销售”)、一汽丰田销售认定的经销商（以下简称“一汽丰田经销商”）及其各自的关联公司（包括但不
+				限于其各自的母公司、车辆的制造公司及丰田汽车（中国）投资有限公司）（以下将“一汽丰田销售”、“一汽丰田经销商”及其各自的关联公司统称为“一
+				汽丰田”）认为严格遵守个人信息保护相关的中国法律法规，妥善处理顾客个人姓名、地址、电话号码、邮箱地址等能够识别顾客个人及其家庭成员身份的信
+				息（以下简称“个人信息”），是企业重要的社会责任。基于此，“一汽丰田”制定了如下的保护个人信息基本方针。</p>
+			<h2 class='mg-b-10'>1.个人信息的取得</h2>
+			<h3>1) “一汽丰田”于以下情形取得个人信息：</h3>
+			<p>① 销售产品、提供服务时取得的个人信息；</p>
+			<p>② 为了提供问询对应等取得的个人信息（包括使用来电显示取得的联系方式）；</p>
+			<p>③ 实施各项调查（包括“一汽丰田”委托外部公司实施的）时取得的个人信息；</p>
+			<p>④ “一汽丰田”取得的其他个人信息。</p>
+			<h3 class='mg-b-30'>2) “一汽丰田”将在取得顾客的同意后，取得其个人信息。</h3>
+			<h2 class='mg-b-10'>2.个人信息的处理</h2>
+			<h3>1）关于个人信息的使用</h3>
+			<p>“一汽丰田”根据前述第1.条规定取得的个人信息，将仅在“一汽丰田”内部根据需要进行共享，并且仅为以下目的或其他合法、正当的目的使用：</p>
+			<p>① 与顾客进行的交易；</p>
+			<p>② 商品及服务的企划、开发、改善；</p>
+			<p>③ 发送与“一汽丰田”的产品、服务、宣传活动（包括但不限于汽车、保险等）相关的信息或通知；</p>
+			<p>（但在未取得顾客同意的情况下，我们不会发送商业性目的的上述信息或通知）</p>
+			<p>④ 在产品企划、开发或提高服务质量及顾客满意度等方面，实施的各项调查；</p>
+			<p>⑤ 顾客问询、联系“一汽丰田经销商”及丰田顾客服务中心时，进行迅速的对应；</p>
+			<p>⑥ 根据法律规定或政府机关、法院、调解机构、仲裁机构等的通知、指导等而采取的对应；</p>
+			<p>⑦ 其他取得个人信息时所明示的使用目的。</p>
+			<h3>2）向第三方提供个人信息</h3>
+			<p>“一汽丰田”根据前述第1.条规定取得的个人信息，在未取得顾客同意的情况下，不会向第三方提供或出售。但是，为了实现上述使用目的，在必要的范围内，会提供给业务受托方。于此情形下，“一汽丰田”会要求业务受托方妥当处理“一汽丰田”所提供的个人信息，并进行妥善管理。
+			</p>
+			<h3>3）妥善管理个人信息</h3>
+			<p class='mg-b-30'>为了对个人信息严格保密，防止不正当接触个人信息，防止个人信息丢失、损坏、被篡改、泄露等，“一汽丰田”采取了妥善的安全措施，并且将在因前述事由导致事故后采取救济措施。</p>
+			<h2 class='mg-b-10'>3.问询等</h2>
+			<p>关于个人信息的相关问询，请就近联系“一汽丰田经销商”或“一汽丰田顾客服务中心”。“一汽丰田”将严格遵守个人信息保护相关的中国法律法规，进行妥善处理。</p>
+			<p>·关于就近的“一汽丰田经销商”</p>
+			<p><a href='http://www.ftms.com.cn/buy/dealer/index.php'>【http://www.ftms.com.cn/buy/dealer/index.php】</a>
+			</p>
+			<p>·“一汽丰田顾客服务中心”</p>
+			<p class='mg-b-30'>【电话：800-810-1210，400-810-1210</p>
+			<h2 class='mg-b-10'>4.遵纪守法与改善</h2>
+			<p>“一汽丰田”将严格遵守个人信息保护相关的中国法律法规，并为了妥善处理个人信息而进行持续性的改善，并会将改善内容随时体现在本基本方针中。</p>
+		</div>
+	</div>
+</body>
+<script src="http://api.ftms.com.cn/Public/Admin/Js/region.car-1.2.js"></script>
+<script src="./static/js/formValidation.js"></script>
+<script>
+	var lazyLoadInstance = new LazyLoad({
+		elements_selector: ".lazy"
+	});
+	$(function () {
+		 var mySwiper = new Swiper('.swiper-container', {
+			// loop: true, // 循环模式选项
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+				bulletClass: 'toyota-bullet',
+				bulletActiveClass: 'toyota-bullet-active'
+			},
+		})     
+
+		var galleryThumbs = new Swiper('.gallery-thumbs', {
+			spaceBetween: 20,
+			slidesPerView: 4,
+		})
+		var galleryTop = new Swiper('.gallery-top', {
+			thumbs: {
+				swiper: galleryThumbs
+			}
+		});
+
+		// 时间选择
+		laydate.render({
+			elem: '#regi_date',
+			trigger: 'click',
+		})
+		laydate.render({
+			elem: '#buy_date',
+			trigger: 'click',
+			format: 'yyyy-MM-dd HH:mm:ss'
+		})
+
+		$('#open_btn').on('click', function () {
+			$('#modal').show()
+		})
+		$('#close-button').on('click', function () {
+			$('#modal').hide()
+		})
+		function setCitys(cid) {
+			if (cid != '') {
+				$("#ftms_city").html('<option value="0">选择城市</option>')
+				$("#ftms_dealer").html('<option value="0">选择经销商</option>')
+				var citys = provinceValie[cid].city
+				var cityHtmlStr = ''
+				for (var i = 0; i < citys.length; i++) {
+					cityHtmlStr = cityHtmlStr + '<option value="' + citys[i]['id'] + '">' + citys[i]['name'] + '</option>'
+				}
+				$("#ftms_city").append(cityHtmlStr)
+			}
+		}
+		// 获取城市
+		$("#ftms_province").change(function () {
+			var cid = $(this).val()
+			setCitys(cid)
+		})
+
+		//获取经销商
+		$("#ftms_city").change(function () {
+			var city = $(this).find("option:selected").attr('value')
+			if (city != '') {
+				$("#ftms_dealer").html('<option value="0">选择经销商</option>')
+				const data = storesVal[city]
+				var dealHtmlStr = ''
+				for (var i = 0; i < data.length; i++) {
+					dealHtmlStr = dealHtmlStr + '<option value="' + data[i]['id'] + '">' + data[i]['name'] + '</option>'
+				}
+				$("#ftms_dealer").append(dealHtmlStr)
+			}
+		})
+	})
+</script>
+
+</html>
+</head>
+
+<body>
