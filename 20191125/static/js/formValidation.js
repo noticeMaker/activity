@@ -109,7 +109,7 @@ $("#btnsave").click(function(e) {
 		'cityId': cityId,
 		'dealerId': storesId,
 		'seriesId': 36,
-		'activity': 756,
+		'activity': 765,
 		'projectName': 'laluola1126',
 		driveTime: regi_date,
 		orderTime: buyDate,
