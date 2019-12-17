@@ -6,6 +6,13 @@ function isMobil(s) {
 	return true;
 }
 
+function getUrlParameter(name) {
+	name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+	var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+	var results = regex.exec(location.search);
+	return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
 window.alert = function(msg) {
 	var div = document.createElement("div");
 	div.innerHTML = "<style type=\"text/css\">"
@@ -100,6 +107,7 @@ $("#btnsave").click(function(e) {
 		alert("请阅读并同意《隐私政策》");
 		return
 	}
+	const utm_source = getUrlParameter('channel')
 
 	var payload = {
 		'mediaLeadType': '预约试驾',
@@ -114,7 +122,8 @@ $("#btnsave").click(function(e) {
 		driveTime: regi_date,
 		orderTime: buyDate,
 		sex: sex,
-		tokenName: 'toyota20191125'
+		tokenName: 'toyota20191125',
+		utm_source: utm_source
 	}
 	
 	$.ajax({
