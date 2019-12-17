@@ -109,6 +109,7 @@ $("#btnsave").click(function(e) {
 	}
 	const utm_source = getUrlParameter('channel') || 'before_wangyiyun'
 
+	const newActivity = utm_source == 'wangyiyun1216' ? 782 : 765
 	var payload = {
 		'mediaLeadType': '预约试驾',
 		'name': name,
@@ -117,7 +118,7 @@ $("#btnsave").click(function(e) {
 		'cityId': cityId,
 		'dealerId': storesId,
 		'seriesId': 36,
-		'activity': 765,
+		'activity': newActivity,
 		'projectName': 'laluola1126',
 		driveTime: regi_date,
 		orderTime: buyDate,
