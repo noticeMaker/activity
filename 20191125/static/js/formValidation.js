@@ -107,7 +107,7 @@ $("#btnsave").click(function(e) {
 		alert("请阅读并同意《隐私政策》");
 		return
 	}
-	const utm_source = getUrlParameter('channel')
+	const utm_source = getUrlParameter('channel') || 'before_wangyiyun'
 
 	var payload = {
 		'mediaLeadType': '预约试驾',
