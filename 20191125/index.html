@@ -26,7 +26,8 @@
 			<!-- 如果需要分页器 -->
 			<div class="swiper-pagination"></div>
 		</div>
-		<img id='sale_rule' class='img-style' style="margin-top: -2px;display: none;" src='./static/imgs/flow_01.jpg'>
+		<img id='sale_rule_12' class='img-style' style="margin-top: -2px;display: none;" src='./static/imgs/flow_01.jpg'>
+		<img id='sale_rule_0102' class='img-style' style="margin-top: -2px;display: none;" src='./static/imgs/flow_01_0102.jpg'>
 		<img class='img-style' src='./static/imgs/flow_02.jpg'>
 		<div class="register-warp">
 			<div class="register-panel">
@@ -196,7 +197,11 @@
 		var utm_source = getUrlParameter('channel')
 
 		if (utm_source == 'wangyiyun1216') {
-			$('#sale_rule').show()
+			$('#sale_rule_12').show()
+		}
+
+		if (utm_source == 'wangyiyun0102') {
+			$('#sale_rule_0102').show()
 		}
 
 		 var mySwiper = new Swiper('.swiper-container', {
