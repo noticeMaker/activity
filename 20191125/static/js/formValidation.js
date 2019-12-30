@@ -107,7 +107,7 @@ $("#btnsave").click(function(e) {
 		alert("请阅读并同意《隐私政策》");
 		return
 	}
-	const utm_source = getUrlParameter('channel') || 'wangyiyun0102'
+	var utm_source = getUrlParameter('channel') || 'wangyiyun0102'
 
 	// 默认1月2号的配置
 	var activityInfo = {

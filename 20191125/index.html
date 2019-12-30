@@ -26,7 +26,7 @@
 			<!-- 如果需要分页器 -->
 			<div class="swiper-pagination"></div>
 		</div>
-		<img class='img-style' style="margin-top: -2px;" src='./static/imgs/flow_01.jpg'>
+		<img id='sale_rule' class='img-style' style="margin-top: -2px;display: none;" src='./static/imgs/flow_01.jpg'>
 		<img class='img-style' src='./static/imgs/flow_02.jpg'>
 		<div class="register-warp">
 			<div class="register-panel">
@@ -192,6 +192,13 @@
 		elements_selector: ".lazy"
 	});
 	$(function () {
+
+		var utm_source = getUrlParameter('channel')
+
+		if (utm_source == 'wangyiyun1216') {
+			$('#sale_rule').show()
+		}
+
 		 var mySwiper = new Swiper('.swiper-container', {
 			// loop: true, // 循环模式选项
 			// 如果需要分页器
