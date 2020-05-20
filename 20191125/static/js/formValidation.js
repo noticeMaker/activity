@@ -107,28 +107,6 @@ $("#btnsave").click(function(e) {
 		alert("请阅读并同意《隐私政策》");
 		return
 	}
-	var utm_source = getUrlParameter('channel') || 'wangyiyun0102'
-
-	// 默认1月2号的配置
-	var activityInfo = {
-		id: 782,
-		seriesId: 36,
-		tokenName: 'toyota20191125',
-		utm_source: 'wangyiyun1216'
-	}
-
-	switch (utm_source) {
-		case 'wangyiyun0102':
-			activityInfo = {
-				id: 793,
-				seriesId: 36,
-				tokenName: 'toyota20191125',
-				utm_source: utm_source,
-			}
-			break;
-		default:
-			break;
-	}
 
 	var payload = {
 		'mediaLeadType': '预约试驾',
@@ -137,14 +115,13 @@ $("#btnsave").click(function(e) {
 		'provinceId': provinceId,
 		'cityId': cityId,
 		'dealerId': storesId,
-		'seriesId': activityInfo.seriesId,
-		'activity': activityInfo.id,
-		'projectName': 'laluola1126',
+		'seriesId': 36,
+		'activity': 888,
+		'projectName': 'laluola520',
 		driveTime: regi_date,
 		orderTime: buyDate,
 		sex: sex,
-		tokenName: activityInfo.tokenName,
-		utm_source: activityInfo.utm_source
+		tokenName: 'toyota20191125'
 	}
 	
 	$.ajax({
