@@ -121,7 +121,8 @@ $("#btnsave").click(function(e) {
 		driveTime: regi_date,
 		orderTime: buyDate,
 		sex: sex,
-		tokenName: 'toyota20191125'
+		tokenName: 'toyota20191125',
+		utm_source: 'laluola520'
 	}
 	
 	$.ajax({
