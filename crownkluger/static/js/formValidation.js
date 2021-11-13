@@ -12,12 +12,6 @@ $(function () {
 		},
 	})
 
-	laydate.render({
-		elem: '#buy_date',
-		trigger: 'click',
-		format: 'yyyy-MM-dd HH:mm:ss'
-	})
-
 	// const apiUrl = 'http://127.0.0.1:3000'
 
 	const apiUrl = document.location.origin
@@ -49,21 +43,6 @@ $(function () {
 			text: '请选择'
 		}));
 	}
-	fetchStatic({
-		url: "/api/activity/rongfang/getSeries",
-		data: {
-			tokenName: tokenName
-		},
-		callback: function (data) {
-			$.each(data, function (key, value) {
-				$('#series').append($('<option>',
-					{
-						value: value.id,
-						text: value.name
-					}));
-			})
-		}
-	})
 
 	fetchStatic({
 		url: "/api/activity/rongfang/getProvince",
@@ -137,6 +116,12 @@ $(function () {
 		return true;
 	}
 
+	function getDate() {
+		var today = new Date();
+		var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		return date + ' ' + time;
+	}
 	function checkSelect(val) {
 		return !val || val === '请选择'
 	}
@@ -149,7 +134,6 @@ $(function () {
 		var seriesId = $("select[name='seriesId']").val()
 		var provinceId = $("select[name='provinceId']").val()
 		var cityId = $("select[name='cityId']").val()
-		var orderTime = $("input[name='orderTime']").val()
 		var dealerId = $("select[name='dealerId']").val()
 		var sel = $("input[name='sel'").is(':checked')
 
@@ -174,9 +158,6 @@ $(function () {
 			return
 		} else if (checkSelect(dealerId)) {
 			alert("经销商没有选择");
-			return
-		} else if (!orderTime) {
-			alert("请选择计划购车时间");
 			return
 		} else if (!sel) {
 			alert("请阅读并同意《隐私政策》");
@@ -204,7 +185,7 @@ $(function () {
 				// 项目名次
 				'projectName': 'huangguanlufang',
 				// 购车时间
-				orderTime: orderTime,
+				orderTime: getDate(),
 				// tokenname
 				tokenName: tokenName
 			},
