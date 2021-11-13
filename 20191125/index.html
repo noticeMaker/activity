@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<title>一汽丰田全新卡罗拉</title>
@@ -65,11 +66,10 @@
 					<div class="register-input hasTriangle flex-1">
 						<input id="regi_date" class="register-input flex-1" readonly placeholder="请选择预约时间">
 					</div>
-					<div class="register-input hasTriangle flex-1">
-						<input id="buy_date" class="register-input flex-1" readonly placeholder="请选择计划的购车时间">
-					</div>
+
+
 				</div>
-				
+
 				<div class="policy mg-b-10">
 					<input id="sel" type="checkbox" checked="">
 					<span class='textSign' id="open_btn">我已阅读并同意《隐私政策》里的各项内容</span>
@@ -86,25 +86,32 @@
 				<div class="swiper-container-video gallery-top">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<video preload="none" controls="controls" src="./static/video/01.mp4" poster="./static/video/01.jpeg"></video>
+							<video preload="none" controls="controls" src="./static/video/01.mp4"
+								poster="./static/video/01.jpeg"></video>
 						</div>
 						<div class="swiper-slide">
-							<video preload="none" controls="controls" src="./static/video/02.mp4" poster="./static/video/02.jpeg"></video>
+							<video preload="none" controls="controls" src="./static/video/02.mp4"
+								poster="./static/video/02.jpeg"></video>
 						</div>
 						<div class="swiper-slide">
-							<video preload="none" controls="controls" src="./static/video/03.mp4" poster="./static/video/03.jpeg"></video>
+							<video preload="none" controls="controls" src="./static/video/03.mp4"
+								poster="./static/video/03.jpeg"></video>
 						</div>
 						<div class="swiper-slide">
-							<video preload="none" controls="controls" src="./static/video/04.mp4" poster="./static/video/04.jpeg"></video>
+							<video preload="none" controls="controls" src="./static/video/04.mp4"
+								poster="./static/video/04.jpeg"></video>
 						</div>
 						<div class="swiper-slide">
-							<video preload="none" controls="controls" src="./static/video/05.mp4" poster="./static/video/05.jpeg"></video>
+							<video preload="none" controls="controls" src="./static/video/05.mp4"
+								poster="./static/video/05.jpeg"></video>
 						</div>
 						<div class="swiper-slide">
-							<video preload="none" controls="controls" src="./static/video/06.mp4" poster="./static/video/06.png"></video>
+							<video preload="none" controls="controls" src="./static/video/06.mp4"
+								poster="./static/video/06.png"></video>
 						</div>
 						<div class="swiper-slide">
-							<video preload="none" controls="controls" src="./static/video/07.mp4" poster="./static/video/07.png"></video>
+							<video preload="none" controls="controls" src="./static/video/07.mp4"
+								poster="./static/video/07.png"></video>
 						</div>
 					</div>
 				</div>
@@ -139,7 +146,7 @@
 	</div>
 
 	<div id="modal" class="back modal-public">
-		
+
 		<div id="modal-closePanel" class='modal-closePanel'>
 			<span id="close-button" class='close-button'>返回</span>
 			<h1 class="close-title">隐私政策</h1>
@@ -192,7 +199,7 @@
 		elements_selector: ".lazy"
 	});
 	$(function () {
-		 var mySwiper = new Swiper('.swiper-container', {
+		var mySwiper = new Swiper('.swiper-container', {
 			// loop: true, // 循环模式选项
 			// 如果需要分页器
 			pagination: {
@@ -200,7 +207,7 @@
 				bulletClass: 'toyota-bullet',
 				bulletActiveClass: 'toyota-bullet-active'
 			},
-		})     
+		})
 
 		var galleryThumbs = new Swiper('.gallery-thumbs', {
 			spaceBetween: 20,
