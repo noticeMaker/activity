@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+</head>
+<body>
+	<script src="./client.min.js"></script>
+	<script>
+		var client = new ClientJS(); // Create A New Client Object
+
+		var fingerprint = client.getFingerprint(); // Calculate Device/Browser Fingerprint
+
+		alert(`你的唯一id是：${fingerprint}`);
+	</script>
+	
+</body>
+</html>
