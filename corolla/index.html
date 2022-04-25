@@ -24,46 +24,37 @@
 <body>
 	<div class="layout">
 		<div class="header">
-			<img src="./static//imgs//header.jpg" />
-			<span class="sign">截图到微信扫描</span>
+			<img src="./static/imgs/header.jpg" />
 		</div>
-		<div class="form-container">
+		<div class="form-container header">
+			<img src="./static/imgs/form.jpg" />
 			<form class="mui-form">
-				<div class="tc">
-					<legend>预约试驾项目</legend>
-				</div>
 				<div class="mui-textfield ">
-					<input name='name' type="text">
-					<label>姓名</label>
+					<input name='name' type="text" placeholder="姓名">
 				</div>
 				<div class="mui-textfield">
-					<input name='phone' type="tel">
-					<label>手机号</label>
+					<input name='phone' type="tel" placeholder="手机号">
 				</div>
 				<div class="mui-select">
 					<select id='series' name='seriesId'>
-						<option>请选择</option>
+						<option>试驾车型</option>
 						<option value='57'>皇冠陆放</option>
 					</select>
-					<label>试驾车型</label>
 				</div>
 				<div class="mui-select">
 					<select id='province' name='provinceId'>
-						<option>请选择</option>
+						<option>省份</option>
 					</select>
-					<label>省份</label>
 				</div>
 				<div class="mui-select">
 					<select id="city" name='cityId'>
-						<option>请选择</option>
+						<option>城市</option>
 					</select>
-					<label>城市</label>
 				</div>
 				<div class="mui-select">
 					<select id='dealer' name='dealerId'>
-						<option>请选择</option>
+						<option>经销商</option>
 					</select>
-					<label>经销商</label>
 				</div>
 				<div class="mui-checkbox">
 					<label>
@@ -78,9 +69,6 @@
 			</form>
 		</div>
 		<div class="container">
-			<div class="container-video">
-				<video preload="none" src="./static/imgs/video.mp4" controls poster="./static/imgs/zhen.png"></video>
-			</div>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -94,11 +82,9 @@
 				<!-- 如果需要分页器 -->
 				<div class="swiper-pagination"></div>
 			</div>
-		</div>
-		<div class="container-setting">
-			<a href="https://www.ftms.com.cn/buycar/cartype/detail/crown_kluger">
-				<img class='lazy' data-src="./static/imgs/contarner_2.jpg" />
-			</a>
+			<div class="container-video">
+				<video preload="none" src="./static/imgs/video.mp4" controls poster="./static/imgs/zhen.jpg"></video>
+			</div>
 		</div>
 	</div>
 	<div id="ex1" class="modal">
