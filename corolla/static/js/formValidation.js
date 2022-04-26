@@ -16,7 +16,7 @@ $(function () {
 
 	const apiUrl = document.location.origin
 
-	const tokenName = 'huawei'
+	const tokenName = 'corolla'
 	function fetchStatic(payload) {
 		$.ajax({
 			type: "post",
@@ -181,9 +181,9 @@ $(function () {
 				// 活动标示 测试
 				// 'activity': 606,
 				// xianshang
-				'activity': 1422,
+				'activity': 1898,
 				// 项目名次
-				'projectName': 'huangguanlufang',
+				'projectName': 'corolla',
 				// 购车时间
 				orderTime: getDate(),
 				// tokenname
