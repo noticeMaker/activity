@@ -67,7 +67,8 @@
 }
 
 .form-container {
-	position: relative;
+	width: 100%;
+	padding: 25px;
 }
 
 .form-container .button {
@@ -75,24 +76,26 @@
 	background-color: rgba(3, 44, 81, 1);
 	color:#fff;
 }
-.mui-form {
-	position: absolute;
-    top: 95px;
-    width: 100%;
-    padding: 30px;
-}
 
 .mui-form .mui-textfield{
-	margin-bottom: 28px;
+	background: #e9f2f9;
+    border-radius: 18px;
+	height: 45px;
+	padding-top: 8px;
 }
 
 .mui-form .mui-select {
-	margin-bottom: 32px;
+	background: #e9f2f9;
+    border-radius: 18px;
+	height: 45px;
+	padding-top: 8px;
 }
+
 
 .mui-textfield>input {
 	border-bottom: none;
 	color: #0456a8;
+	padding-left: 18px;
 }
 .mui-textfield>input::placeholder {
 	color: #0456a8;
@@ -102,6 +105,21 @@
 	border-bottom: none;
 	background-image: none;
 	color: #0456a8!important;
+	padding-left: 18px;
+}
+
+.mui-select{
+	position: relative;
+}
+.mui-select::after{
+	position: absolute;
+	width: 27px;
+	height: 35px;
+	content: '';
+	background: url(../imgs/select.png) no-repeat;
+	background-size: 50%;
+	right: 5px;
+	top: 14px;
 }
 
 .mui-textfield>label {

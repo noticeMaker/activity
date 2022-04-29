@@ -1,0 +1,164 @@
+
+
+.layout {
+	max-width: 450px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header {
+	position: relative;
+}
+.header img {
+	width: 100%;
+	height: 100%;
+}
+
+.header .sign {
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+	z-index: 2;
+	color: #fff;
+	font-size: 12px;
+}
+
+.container {
+	position: relative;
+	background-image: url('../imgs/material.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 7.7rem;
+}
+
+.container-video {
+	position: absolute;
+    top: 5.09rem;
+    left: 0.14rem;
+    width: 3.7rem;
+    height: 2.15rem;
+}
+
+
+.swiper-container, .swiper-container-video {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.swiper-container img {
+    width: 100%;
+}
+
+.swiper-container-video img {
+    width: 100%;
+    height: 80px;
+}
+
+.swiper-container {
+	position: absolute;
+    top: 1.28rem;
+    left: 0.229rem;
+    width: 3.55rem;
+    height: 2.1rem;
+}
+
+.swiper-container .swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container .swiper-pagination-bullet-active{
+	background: #9a1f22;
+}
+
+.form-container .button {
+	width: 70%;
+	background-color: rgba(3, 44, 81, 1);
+	color:#fff;
+}
+
+.form-container {
+	width: 100%;
+	padding: 25px;
+}
+
+.mui-form .mui-textfield{
+	background: #ffefef;
+    border-radius: 18px;
+	height: 45px;
+	padding-top: 8px;
+}
+
+.mui-form .mui-select {
+	background: #ffefef;
+    border-radius: 18px;
+	height: 45px;
+	padding-top: 8px;
+}
+
+.mui-textfield>input {
+	border-bottom: none;
+	color: #9a1f22;
+	padding-left: 18px;
+}
+.mui-textfield>input::placeholder {
+	color: #9a1f22;
+}
+.mui-select{
+	position: relative;
+}
+.mui-select::after{
+	position: absolute;
+	width: 27px;
+	height: 35px;
+	content: '';
+	background: url(../imgs/select.png) no-repeat;
+	background-size: 50%;
+	right: 5px;
+	top: 14px;
+}
+.mui-select>select {
+	border-bottom: none;
+	background-image: none;
+	color: #9a1f22!important;
+	padding-left: 18px;
+}
+
+.mui-textfield>label {
+	font-size: 14px;
+}
+.mui-select>select {
+	color: #aaa;
+}
+.mui-select>label {
+	font-size: 14px;
+}
+
+.mui-btn {
+	font-size: 0.16rem;
+    color: rgba(255, 255, 255, 1);
+    background-color: #9a1f22;
+    width: 80%;
+    height: 0.37rem;
+    border-radius: 0.12rem;
+	display: inline-block;
+}
+
+.modal {
+	width: 95%;
+	height: 90%;
+	background-color: #fff;
+	padding: 10px;
+}
+.modal .modal-container{
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+.modal h2{
+	text-align: center;
+	font-weight: bold;
+}
+
+video::--webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+}
