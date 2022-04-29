@@ -27,15 +27,15 @@
 	background-image: url('../imgs/material.jpg');
 	background-position: center;
 	background-size: cover;
-	height: 10.5rem;
+	height: 7.7rem;
 }
 
 .container-video {
 	position: absolute;
-    top: 7.45rem;
+    top: 5.09rem;
     left: 0.14rem;
     width: 3.7rem;
-    height: 2.0183rem;
+    height: 2.15rem;
 }
 
 
@@ -55,7 +55,7 @@
 
 .swiper-container {
 	position: absolute;
-    top: 3.65rem;
+    top: 1.28rem;
     left: 0.229rem;
     width: 3.55rem;
     height: 2.1rem;
@@ -65,10 +65,8 @@
 	width: 100%;
 	height: 100%;
 }
-
-.form-container {
-	width: 100%;
-	padding: 25px;
+.swiper-container .swiper-pagination-bullet-active{
+	background: #9a1f22;
 }
 
 .form-container .button {
@@ -77,37 +75,33 @@
 	color:#fff;
 }
 
+.form-container {
+	width: 100%;
+	padding: 25px;
+}
+
 .mui-form .mui-textfield{
-	background: #e9f2f9;
+	background: #ffefef;
     border-radius: 18px;
 	height: 45px;
 	padding-top: 8px;
 }
 
 .mui-form .mui-select {
-	background: #e9f2f9;
+	background: #ffefef;
     border-radius: 18px;
 	height: 45px;
 	padding-top: 8px;
 }
 
-
 .mui-textfield>input {
 	border-bottom: none;
-	color: #0456a8;
+	color: #9a1f22;
 	padding-left: 18px;
 }
 .mui-textfield>input::placeholder {
-	color: #0456a8;
+	color: #9a1f22;
 }
-
-.mui-select>select {
-	border-bottom: none;
-	background-image: none;
-	color: #0456a8!important;
-	padding-left: 18px;
-}
-
 .mui-select{
 	position: relative;
 }
@@ -120,6 +114,12 @@
 	background-size: 50%;
 	right: 5px;
 	top: 14px;
+}
+.mui-select>select {
+	border-bottom: none;
+	background-image: none;
+	color: #9a1f22!important;
+	padding-left: 18px;
 }
 
 .mui-textfield>label {
@@ -135,8 +135,8 @@
 .mui-btn {
 	font-size: 0.16rem;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(3, 44, 81, 1);
-    width: 72%;
+    background-color: #9a1f22;
+    width: 80%;
     height: 0.37rem;
     border-radius: 0.12rem;
 	display: inline-block;
