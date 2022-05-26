@@ -1,4 +1,3 @@
-
 $(function () {
 
 	new LazyLoad({
@@ -12,9 +11,9 @@ $(function () {
 		},
 	})
 
-	const apiUrl = 'http://127.0.0.1:3000'
+	// const apiUrl = 'http://127.0.0.1:3000'
 
-	// const apiUrl = document.location.origin
+	const apiUrl = document.location.origin
 
 	const tokenName = 'corolla'
 	function fetchStatic(payload) {
@@ -25,9 +24,8 @@ $(function () {
 			url: apiUrl + payload.url,
 			data: JSON.stringify(payload.data),
 			success: function (data, _i, xhr) {
-				console.log(data, xhr)
 				if (xhr.status == 200 && data.response) {
-					payload.callback && payload.callback(data.response, null)
+					payload.callback && payload.callback(data.response.data, null)
 				}
 			},
 			error: function (data) {
@@ -46,17 +44,17 @@ $(function () {
 	}
 
 	fetchStatic({
-		url: "/api/clue/getProvince",
+		url: "/api/activity/rongfang/getProvince",
 		data: {
-			configKey: tokenName
+			tokenName: tokenName
 		},
 		callback: function (data) {
-			console.log(data)
+
 			$.each(data, function (key, value) {
 
 				$('#province').append($('<option>',
 					{
-						value: value.code,
+						value: value.id,
 						text: value.name
 					}));
 			})
@@ -68,16 +66,16 @@ $(function () {
 		removeOptionUtil('#city')
 		removeOptionUtil('#dealer')
 		fetchStatic({
-			url: "/api/clue/getCityByPid",
+			url: "/api/activity/rongfang/getCity",
 			data: {
-				configKey: tokenName,
-				provinceCode: this.value
+				tokenName: tokenName,
+				provinceId: this.value
 			},
 			callback: function (data) {
 				$.each(data, function (key, value) {
 					$('#city').append($('<option>',
 						{
-							value: value.code,
+							value: value.id,
 							text: value.name
 						}));
 				})
@@ -88,10 +86,10 @@ $(function () {
 	$('#city').on('change', function (val) {
 		removeOptionUtil('#dealer')
 		fetchStatic({
-			url: "/api/clue/getDealerByCid",
+			url: "/api/activity/rongfang/getDealer",
 			data: {
-				configKey: tokenName,
-				cityCode: this.value
+				tokenName: tokenName,
+				cityId: this.value
 			},
 			callback: function (data) {
 				$.each(data, function (key, value) {
@@ -166,8 +164,9 @@ $(function () {
 		}
 
 		fetchStatic({
-			url: "/api/clue/save",
+			url: "/api/activity/toyota",
 			data: {
+				'mediaLeadType': '预约试驾',
 				'name': name,
 				'phone': phone,
 				// 省份
@@ -178,11 +177,16 @@ $(function () {
 				'dealerId': dealerId,
 				// 试驾车型
 				'seriesId': seriesId,
-				mediaLeadType: '今日头条预约试驾',
+				// 活动标示 测试
+				// 'activity': 606,
+				// xianshang
+				'activity': 1898,
+				// 项目名次
+				'projectName': 'corolla',
 				// 购车时间
 				orderTime: getDate(),
 				// tokenname
-				configKey: tokenName
+				tokenName: tokenName
 			},
 			callback: function (data, error) {
 				if (error) {
