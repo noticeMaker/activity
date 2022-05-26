@@ -1,0 +1,268 @@
+
+
+.layout {
+	max-width: 450px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header {
+	position: relative;
+}
+.header img {
+	width: 100%;
+	height: 100%;
+}
+
+.header .sign {
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+	z-index: 2;
+	color: #fff;
+	font-size: 12px;
+}
+
+.container {
+	position: relative;
+	background-image: url('../imgs/material.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 10.5rem;
+}
+
+.container-video {
+	position: relative;
+	width: 100%;
+    background: url(../imgs/shipin.jpg) no-repeat 0 0;
+    height: 3.8rem;
+    background-size: 100% 100%;
+}
+
+.container-video .video-wrap {
+	position: absolute;
+    top: 1.3rem;
+    left: 0.2rem;
+    width: 3.6rem;
+    height: 2rem;
+}
+.container-video video {
+	width: 100%;
+	/* height: 100%; */
+}
+
+.container-liangdian {
+	position: relative;
+	width: 100%;
+    background: url(../imgs/liangdian.jpg) no-repeat 0 0;
+    height: 3.9rem;
+    background-size: 100% 100%;
+}
+.container-peizhi {
+	position: relative;
+	width: 100%;
+    background: url(../imgs/peizhi.jpg) no-repeat 0 0;
+    height: 5.8rem;
+    background-size: 100% 100%;
+}
+.container-peizhi .rule-list {
+	border: 1px solid #fafafa;
+	overflow: hidden;
+}
+.container-peizhi .rule-list .item{
+	display: flex;
+	color: #fff;
+	border-bottom: 1px solid #fafafa;
+	font-size: 12px;
+}
+.container-peizhi .rule-list .item:last-child {
+	border-bottom: none;
+}
+.font14 {
+	font-size: 14px;
+}
+.rule-list .title {
+	background: #4d8be0;
+}
+.rule-list .rule {
+	background: #135fc6;
+}
+.rule-list .title .label, .rule-list .title .value {
+	font-size: 18px;
+	border-right: none;
+	padding: 10px 20px;
+}
+.rule-list .title .value {
+	font-weight: bold;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.rule-list .font14 .label, .rule-list .font14 .value { 
+	font-size: 14px;
+	padding: 8px 20px;
+}
+.item .label {
+	flex: 1;
+	width: 48%;
+	border-right: 1px solid #fafafa;
+	font-size: 12px;
+	padding: 8px 20px;
+}
+.item .label:last-child {
+	border-right: none;
+}
+.item .value {
+	/* flex: 1; */
+	width: 52%;
+	font-size: 12px;
+	padding: 8px 0px 8px 10px;
+}
+.swiper-container, .swiper-container-video {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.swiper-container img {
+    width: 100%;
+	/* height: 100%; */
+}
+
+.swiper-container-video img {
+    width: 100%;
+    height: 80px;
+}
+
+.swiper-container {
+	position: absolute;
+    top: 1.3rem;
+    left: 0.229rem;
+    width: 3.55rem;
+    height: 2.2rem;
+}
+.swiper-container2 {
+	top: 1.1rem;
+	left: 0.229rem;
+	width: 3.6rem;
+	height: 4.5rem;
+
+}
+.swiper-container .swiper-container{
+	width: 100%;
+	height: 100%;
+}
+
+.form-container {
+	position: relative;
+	width: 100%;
+	padding: 25px;
+}
+.form-container .bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.form-container .button {
+	width: 70%;
+	background-color: rgba(3, 44, 81, 1);
+	color:#fff;
+}
+
+.mui-form {
+	margin-top: 50px;;
+}
+.mui-form .mui-textfield{
+	background: #c6dbef;
+    border-radius: 18px;
+	height: 45px;
+	padding-top: 8px;
+}
+
+.mui-form .mui-select {
+	background: #c6dbef;
+    border-radius: 18px;
+	height: 45px;
+	padding-top: 8px;
+}
+/* .swiper-container-horizontal> .swiper-pagination2, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: -5px;
+    left: 0;
+    width: 100%;
+} */
+
+.mui-textfield>input {
+	border-bottom: none;
+	color: #1d9dd8;
+	padding-left: 18px;
+}
+.mui-textfield>input::placeholder {
+	color: #1d9dd8;
+}
+
+.mui-select>select {
+	border-bottom: none;
+	background-image: none;
+	color: #1d9dd8!important;
+	padding-left: 18px;
+}
+
+.mui-select{
+	position: relative;
+}
+.mui-select::after{
+	position: absolute;
+	width: 27px;
+	height: 35px;
+	content: '';
+	background: url(../imgs/select.png) no-repeat;
+	background-size: 50%;
+	right: 5px;
+	top: 14px;
+}
+
+.mui-textfield>label {
+	font-size: 14px;
+}
+.mui-select>select {
+	color: #aaa;
+}
+.mui-select>label {
+	font-size: 14px;
+}
+.mui-checkbox a {
+	color: #fff;
+	font-size: 12px;
+}
+
+.mui-btn {
+	font-size: 0.16rem;
+    color: #fff;
+    background-color: #7aaee0;
+    width: 90%;
+    height: 0.4rem;
+	line-height: 0.4rem;
+    border-radius: 0.12rem;
+	display: inline-block;
+}
+
+.modal {
+	width: 95%;
+	height: 90%;
+	background-color: #fff;
+	padding: 10px;
+}
+.modal .modal-container{
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+.modal h2{
+	text-align: center;
+	font-weight: bold;
+}
+
+video::--webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+}
