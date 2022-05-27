@@ -22,7 +22,7 @@ $(function () {
 
 	// const apiUrl = document.location.origin
 
-	const tokenName = 'corolla'
+	const tokenName = 'rav4'
 	function fetchStatic(payload) {
 		$.ajax({
 			type: "post",
@@ -184,7 +184,7 @@ $(function () {
 				'dealerId': dealerId,
 				// 试驾车型
 				'seriesId': seriesId,
-				mediaLeadType: '今日头条预约试驾',
+				mediaLeadType: '预约试驾',
 				// 购车时间
 				orderTime: getDate(),
 				// tokenname
