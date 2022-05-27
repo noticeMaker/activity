@@ -5,19 +5,18 @@ $(function () {
 		elements_selector: ".lazy"
 	});
 
-	new Swiper('.swiper-container1', {
+	new Swiper('.swiper-container', {
 		// 如果需要分页器
 		pagination: {
-			el: '.swiper-pagination1',
+			el: '.swiper-pagination',
 		},
 	})
 
-	new Swiper('.swiper-container2', {
-		// 如果需要分页器
-		pagination: {
-			el: '.swiper-pagination2',
-		},
-	})
+	$('#config').change(function () {
+		$('.configTable').hide();
+		$('.configTable' + $(this).val()).show();
+		$('.configMsgSmBox').scrollTop(0);
+	});
 
 	const apiUrl = 'http://127.0.0.1:3000'
 

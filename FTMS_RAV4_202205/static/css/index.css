@@ -60,9 +60,300 @@
 .container-peizhi {
 	position: relative;
 	width: 100%;
-    background: url(../imgs/peizhi.jpg) no-repeat 0 0;
+    background: url(../imgs/peizhi2.jpg) no-repeat 0 0;
     height: 5.8rem;
     background-size: 100% 100%;
+}
+
+/* 表格样式 */
+.configBox {
+	position: relative;
+	width: 100%;
+}
+.configTitle {
+	width: 100%;
+}
+.configSmBox {
+	width: 92%;
+	position: relative;
+	margin: 0 auto -182px;
+	z-index: 99;
+	box-shadow: 1px 1px 8px 1px rgba(10, 10, 15, 0.29);
+	top: 1.2rem;
+}
+.configTitleBox {
+	width: 100%;
+	background-color: #5e94d0;
+	position: relative;
+}
+.configInput {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	border-right: 2px solid rgba(255, 255, 255, 0.3);
+	background-color: #233a51;
+	color: #a5b5c7;
+	/* opacity: 0.3; */
+	height: 32px;
+	/* padding-left: calc(5.3vw - 2px); */
+	padding-left: calc(3.5vw - 2px);
+	border-radius: 0;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.none {
+    display: none;
+}
+.configInput {
+	position: relative;
+	background: #1f4674 url('../imgs/icon2.png') no-repeat;
+	/* background-size: 100%; */
+	background-size: 16px 9px;
+	/* background-position: calc(100% - 5.3vw) center; */
+	background-position: calc(100% - 3vw) center;
+	appearance: none!important;
+}
+.configMsgBox {
+	position: relative;
+}
+.configMsgBoxImg {
+	width: 100%;
+}
+.configMsgSmBox {
+	width: 100%;
+	box-sizing: border-box;
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	border-right: 2px solid rgba(255, 255, 255, 0.3);
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.configTable {
+	color: #fff;
+	/* background-color: rgba(0, 0, 0, 0.7); */
+}
+.configLine1 {
+	/* min-height: 40px; */
+	box-sizing: border-box;
+	/* padding-left: calc(5.3vw - 2px); */
+	padding-left: calc(3.5vw - 2px);
+	padding-right: calc(5.3vw - 2px);
+	line-height: 23px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #fff;
+	padding-top: 9px;
+	padding-bottom:10px;
+	word-break: break-word;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.configTable .configLine1 {
+	border-top: none;
+}
+.configLine3 {
+	/* min-height: 40px; */
+	line-height: 23px;
+	/* background: pink; */
+	display: flex;
+	font-size: 12px;
+	letter-spacing: 1px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	/* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+}
+.configLine3 .model1 {
+	/* background: orange; */
+	width: 35%;
+	box-sizing: border-box;
+	/* padding-left: calc(5.3vw - 2px); */
+	padding-left: calc(3.5vw - 2px);
+	padding-right: 4%;
+	padding-top: 9px;
+	padding-bottom:10px;
+	word-break: break-word;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+
+	line-height: 23px;
+	font-size: 12px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.configLine3 .model2 {
+	/* background: grey; */
+	width: 18%;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 9px;
+	padding-bottom:10px;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	word-break: break-word;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 23px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+.configLine3 .model3 {
+	/* background: darkgoldenrod; */
+	width: 47%;
+	box-sizing: border-box;
+	/* padding-right: calc(5.3vw - 2px);
+	padding-left: 4%; */
+	padding-left: calc(5.3vw - 2px);
+	padding-right: 4%;
+	word-break: break-word;
+	padding-top: 9px;
+	padding-bottom:10px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	line-height: 23px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+.configLine2 {
+	/* min-height: 40px; */
+	line-height: 23px;
+	/* background: pink; */
+	display: flex;
+	font-size: 12px;
+	letter-spacing: 1px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	/* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+}
+.configLine2 .model1 {
+	/* background: orange; */
+	width: 53%;
+	box-sizing: border-box;
+	padding-left: calc(5.3vw - 2px);
+	word-break: break-word;
+	padding-right: 4%;
+	padding-top: 9px;
+	padding-bottom:10px;
+
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+.configLine2 .model2 {
+	/* background: darkgoldenrod; */
+	width: 47%;
+	box-sizing: border-box;
+	padding-right: calc(5.3vw - 2px);
+	padding-left: 4%;
+	word-break: break-word;
+	padding-top: 9px;
+	padding-bottom:10px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+.textCenter {
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.textLeft {
+	text-align: left;
+	border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.noTopBorder {
+	border-top: none !important;
+}
+.agreeBox {
+	position: relative;
+	width: 100%;
+}
+.agreeImg {
+	width: 100%;
+}
+.agreeBtn {
+	position: absolute;
+	width: 25%;
+	height: 70%;
+	left: 10%;
+	top: 15%;
+}
+.ysxyBtn {
+	position: absolute;
+	width: 20%;
+	height: 70%;
+	left: 45%;
+	top: 15%;
+}
+.ysxyTk {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	z-index: 999;
+}
+.carTkBox {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.carTkBoxImg {
+	height: 90vh;
+	max-height: 686px;
+}
+.tkTextBox {
+	position: absolute;
+	width: 95.8%;
+	height: 73.35%;
+	left: 50%;
+	top: 14.7%;
+	transform: translate(-50%, 0);
+	overflow: hidden;
+	overflow-y: auto;
+}
+.tkTextBox img {
+	width: 100%;
+}
+.closeTk {
+	position: absolute;
+	width: 100%;
+	height: 8%;
+	left: 0;
+	bottom: 0;
+}
+.carText {
+	margin: 0 auto;
+}
+.headImgBox {
+	position: relative;
+	width: 100%;
+}
+.moveDown {
+	width: 16px;
+	position: absolute;
+	left: 50%;
+	top: 105%;
+	margin-left: -8px;
+	animation: downMoveAn linear 1.5s infinite;
+	z-index: 99;
+}
+@keyframes downMoveAn {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(150%);
+		opacity: 0;
+	}
 }
 .container-peizhi .rule-list {
 	border: 1px solid #fafafa;

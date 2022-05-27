@@ -38,7 +38,8 @@
 				<div class="mui-select">
 					<select id='series' name='seriesId'>
 						<option>试驾车型</option>
-						<option value='59'>卡罗拉锐放</option>
+						<option value='59'>全新RAV4荣放</option>
+						<option value='60'>RAV4荣放双擎E+</option>
 					</select>
 				</div>
 				<div class="mui-select">
@@ -70,11 +71,12 @@
 		</div>
 		<div class="container-video">
 			<div class="video-wrap">
-				<video preload="none" src="./static/imgs/shipin16.mp4" controls poster="./static/imgs/zhen.jpg"></video>
+				<video preload="none" src="./static/imgs/shipin16.mp4" controls
+					poster="./static/imgs/dingzhen.png"></video>
 			</div>
 		</div>
 		<div class="container-liangdian">
-			<div class="swiper-container swiper-container1">
+			<div class="swiper-container swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img class='lazy' data-src='./static/imgs/liangdian1.png'>
@@ -82,478 +84,4964 @@
 					<div class="swiper-slide"><img class='lazy' data-src='./static/imgs/liangdian2.jpg'></div>
 					<div class="swiper-slide"><img class='lazy' data-src='./static/imgs/liangdian3.jpg'></div>
 					<div class="swiper-slide"><img class='lazy' data-src='./static/imgs/liangdian4.jpg'></div>
-					<div class="swiper-slide"><img class='lazy' data-src='./static/imgs/liangdian5.jpg'></div>
+					<div class="swiper-slide"><img class='lazy' data-src='./static/imgs/liangdian5.png'></div>
 				</div>
 				<!-- 如果需要分页器 -->
-				<div class="swiper-pagination swiper-pagination1"></div>
+				<div class="swiper-pagination swiper-pagination"></div>
 			</div>
 		</div>
 		<div class="container-peizhi">
-			<div class="swiper-container swiper-container2">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+			<div class="configSmBox">
+				<div class="configTitleBox">
+					<img class="configTitle" src="./static/imgs/tableHeadImg.jpeg" alt="">
+				</div>
+				<select id="config" class="configInput">
+					<option value="1">2.0L汽油版 都市版</option>
+					<option value="2">2.0L汽油版 风尚版</option>
+					<option value="3">2.0L汽油版 风尚Plus版</option>
+					<option value="4">2.0L汽油版 风尚四驱版</option>
+					<option value="5">2.0L汽油版 风尚Plus四驱版</option>
+					<option value="6">2.0L汽油版 尊贵版</option>
+					<option value="7">2.0L汽油版 尊贵四驱版</option>
+					<option value="8">2.5L双擎版 精英版</option>
+					<option value="9">2.5L双擎版 精英Plus四驱版</option>
+					<option value="10">2.5L双擎版 旗舰四驱版</option>
+				</select>
+				<div class="configMsgBox">
+					<img class="configMsgBoxImg" src="./static/imgs//configMsgBox.png" alt="">
+					<div class="configMsgSmBox">
+						<div class="configTable configTable1">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,600×1,855×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">双擎2.5L旗舰四驱版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,230</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,600mm×1,855mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">2487cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">163kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,540</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">221Nm/3600-5200rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/65R17</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">Direct Shift-CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">5.0L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">1,987</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">126</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">209/4,400-5,000</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">80.5×97.6</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">5.8</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">前驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">17英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">4.2英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">织物</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">手动6向</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">4</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable2 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,600×1,855×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">双擎2.5L精英Plus四驱版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,200</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,600mm×1,855mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">2487cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">163kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,565</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">221Nm/3600-5200rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/60R18</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">Direct Shift-CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">5.0L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">1,987</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">126</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">209/4,400-5,000</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">80.5×97.6</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">5.9</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">前驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">18英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">织物</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable3 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,600×1,855×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">双擎2.5L精英版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,200</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,600mm×1,855mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">2487cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">160kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,565</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">221Nm/3600-5200rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/60R18</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">Direct Shift-CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">4.7L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">1,987</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">126</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">209/4,400-5,000</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">80.5×97.6</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">5.9</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">前驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">18英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">真皮*1</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable4 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,625×1,865×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">2.0L尊贵四驱版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,200</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,625mm×1,865mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,597mm×1,611mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">1987cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">126kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,625</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">209Nm/4400-5000rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/60R18</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">Direct Shift-CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">6.4L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">1,987</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">126</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">209/4,400-5,000</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">80.5×97.6</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">6.3</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">四驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">18英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">●（深灰）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">织物</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable5 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,625×1,865×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">2.0L尊贵版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,200</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,600mm×1,855mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,597mm×1,611mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">1987cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">126kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,625</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">209Nm/4400-5000rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/60R18</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">Direct Shift-CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">5.9L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">1,987</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">126</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">209/4,400-5,000</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">80.5×97.6</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">6.3</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">四驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">18英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">●（深灰）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">真皮*1/翻毛材质混搭</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable6 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,600×1,855×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">2.0L风尚四驱版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,210</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,625mm×1,865mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,597/1,611</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.7</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">1987cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">126kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,610</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">209Nm/4400-5000rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">235/55R19</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">Direct Shift-CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">6.3L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">1,987</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">126</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">209/4,400-5,000</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">80.5×97.6</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">5.9</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">前驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">19英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●（全景天窗）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●（投射式）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">真皮*1</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable7 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,625×1,865×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">2.0L风尚版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,210</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,600mm×1,855mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,597/1,611</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.7</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">1987cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">126kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,685</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">209Nm/4400-5000rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">235/55R19</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">Direct Shift-CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">6.3L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">1,987</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">126</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">209/4,400-5,000</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">80.5×97.6</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">6.4</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">四驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">19英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">●（深灰）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●（全景天窗）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●（投射式）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">真皮*1/翻毛材质混搭</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable8 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,600×1,855×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">2.0L都市版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,200</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,600mm×1,855mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">1987cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">126kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,670</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">209Nm/4400-5000rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/60R18</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">5.8L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">2,487</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">131</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">221/3,600-5,200</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">87.5×103.4</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">4.7</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">前驱</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">88</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">202</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">160</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">18英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">织物</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable9 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,600×1,855×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">2.0L风尚Plus四驱版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,200</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,625mm×1,865mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">1987cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">126kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,735</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">209Nm/4400-5000rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/60R18</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">6.3L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">2,487</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">131</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">221/3,600-5,200</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">87.5×103.4</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">5.0</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">电子四驱（E-Four）</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">前88/后40</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">前202/后121</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">163</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">18英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">真皮*1</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="rule-list">
-							<div class="item title">
-								<div class="label ">主要规格表</div>
-								<div class="value">RAV4荣放</div>
+						<div class="configTable configTable10 none">
+							<div class="configLine1 textLeft noTopBorder">尺寸·质量</div>
+							<div class="configLine3">
+								<div class="model1">长×宽×高</div>
+								<div class="model2">mm</div>
+								<div class="model3">4,600×1,855×1,680</div>
 							</div>
-							<div class="item font14 rule">
-								<div class="label">2.0L风尚Plus版</div>
+							<div class="configLine3">
+								<div class="model1">室内长×室内宽×室内高</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,890×1,515×1,210</div>
 							</div>
-							<div class="item font14">
-								<div class="label">主要规格</div>
+							<div class="configLine3">
+								<div class="model1">轴距</div>
+								<div class="model2">mm</div>
+								<div class="model3">2,690</div>
 							</div>
-							<div class="item">
-								<div class="label">长×宽×高</div>
-								<div class="value">4,600mm×1,855mm×1,680mm</div>
+							<div class="configLine3">
+								<div class="model1">轮距（前/后）</div>
+								<div class="model2">mm</div>
+								<div class="model3">1,607/1,621</div>
 							</div>
-							<div class="item">
-								<div class="label">轮距（前/后）</div>
-								<div class="value">1,607mm×1,621mm</div>
+							<div class="configLine3">
+								<div class="model1">最小转弯半径</div>
+								<div class="model2">m</div>
+								<div class="model3">5.5</div>
 							</div>
-							<div class="item">
-								<div class="label">轴距</div>
-								<div class="value">2690mm</div>
+							<div class="configLine3">
+								<div class="model1">接近角</div>
+								<div class="model2">度</div>
+								<div class="model3">18.1</div>
 							</div>
-							<div class="item">
-								<div class="label">排气量</div>
-								<div class="value">1987cc</div>
+							<div class="configLine3">
+								<div class="model1">离去角</div>
+								<div class="model2">度</div>
+								<div class="model3">20.3</div>
 							</div>
-							<div class="item">
-								<div class="label">双擎系统最大输出功率</div>
-								<div class="value">126kW</div>
+							<div class="configLine3">
+								<div class="model1">整备质量</div>
+								<div class="model2">kg</div>
+								<div class="model3">1,760</div>
 							</div>
-							<div class="item">
-								<div class="label">最大扭矩</div>
-								<div class="value">209Nm/4400-5000rpm</div>
+							<div class="configLine3">
+								<div class="model1">轮胎规格</div>
+								<div class="model2"></div>
+								<div class="model3">225/60R18</div>
 							</div>
-							<div class="item">
-								<div class="label">邮箱容积</div>
-								<div class="value">55L</div>
+							<div class="configLine1 textLeft">发动机·变速箱</div>
+							<div class="configLine3">
+								<div class="model1">变速箱型式</div>
+								<div class="model2"></div>
+								<div class="model3">CVT</div>
 							</div>
-							<div class="item">
-								<div class="label">百公里油耗(综合工况)</div>
-								<div class="value">5.9L/100km</div>
+							<div class="configLine3">
+								<div class="model1">发动机排气量</div>
+								<div class="model2">cc</div>
+								<div class="model3">2,487</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机额定功率</div>
+								<div class="model2">kW/rpm</div>
+								<div class="model3">131</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机最大扭矩</div>
+								<div class="model2">Nm/rpm</div>
+								<div class="model3">221/3,600-5,200</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机缸径×行程</div>
+								<div class="model2">mm</div>
+								<div class="model3">87.5×103.4</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">最高车速</div>
+								<div class="model2">km/h</div>
+								<div class="model3">180</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">油箱容积</div>
+								<div class="model2">L</div>
+								<div class="model3">55</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">百公里油耗（综合工况)</div>
+								<div class="model2">L/100km</div>
+								<div class="model3">5.0</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">环保标准（国6）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">进气格栅主动关闭系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">动态扭矩矢量控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine1 textLeft">悬架·驱动方式</div>
+							<div class="configLine3">
+								<div class="model1">悬架系统（前/后）</div>
+								<div class="model2"></div>
+								<div class="model3">麦弗逊式独立悬架/双叉臂式独立悬架</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驱动方式</div>
+								<div class="model2"></div>
+								<div class="model3">电子四驱（E-Four）</div>
+							</div>
+							<div class="configLine1 textLeft">双擎系统</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">前88/后40</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">电动机峰值扭矩</div>
+								<div class="model2">Nm</div>
+								<div class="model3">前202/后121</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双擎系统最大输出功率</div>
+								<div class="model2">kW</div>
+								<div class="model3">163</div>
+							</div>
+							<div class="configLine1 textLeft">配备表</div>
+							<div class="configLine1 textLeft">外观</div>
+							<div class="configLine3">
+								<div class="model1">铝合金轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">18英寸</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">熏黑轮毂</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野套件（前后保险杠护板造型+轮眉+外后视镜罩黑色涂装等）</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">双排气管</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车窗上方镀铬装饰</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">车顶行李架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">脚踢感应式电动尾门</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">鲨鱼鳍天线</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">内饰</div>
+							<div class="configLine3">
+								<div class="model1">天窗</div>
+								<div class="model2"></div>
+								<div class="model3">●（全景天窗）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">真皮换挡手柄</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">多功能方向盘</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带化妆镜遮阳板</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TFT彩色多功能信息显示屏</div>
+								<div class="model2"></div>
+								<div class="model3">7英寸</div>
+							</div>
+							<div class="configLine1 textLeft">视野</div>
+							<div class="configLine3">
+								<div class="model1">LED前大灯</div>
+								<div class="model2"></div>
+								<div class="model3">●（投射式）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">组合式LED后尾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前雾灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LED日间行车灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前大灯感光自动控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">间歇式雨刮器（可调时长）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">带转向灯电动外后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜自动折叠</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">外后视镜加热功能</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">手动防眩目车内后视镜</div>
+								<div class="model2"></div>
+								<div class="model3">流媒体后视镜</div>
+							</div>
+							<div class="configLine1 textLeft">储物空间</div>
+							<div class="configLine3">
+								<div class="model1">手套箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排地图袋</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">中央扶手储物箱</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">顶部眼镜盒</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">照明</div>
+							<div class="configLine3">
+								<div class="model1">行李厢照明</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排阅读灯</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">座椅</div>
+							<div class="configLine3">
+								<div class="model1">座椅材质</div>
+								<div class="model2"></div>
+								<div class="model3">真皮*1</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">专属越野风格内饰</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后座中央扶手及杯架</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席座椅8向电动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">副驾驶席座椅4向手动调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席电动腰部支撑</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排座椅加热装置</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅调节</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排座椅6:4分割</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">空调</div>
+							<div class="configLine3">
+								<div class="model1">左右独立温度控制自动空调</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">空调滤清器（带PM2.5过滤功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">后排空调出风口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">操控及人性化配置</div>
+							<div class="configLine3">
+								<div class="model1">一键启动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能无钥匙进入系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">EPB电子驻车制动系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能电动车窗（四门防夹）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine1 textLeft">多媒体配置</div>
+							<div class="configLine3">
+								<div class="model1">丰田智行互联*2</div>
+								<div class="model2"></div>
+								<div class="model3">●（含远程控制等服务）</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">8英寸多媒体显示系统（支持百度Carlife)*3</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">10.1英寸多媒体导航系统 （支持QQ音乐/喜马拉雅FM）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">语音操控（车窗/空调/仪表等功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能家居联动（现支持百度智能家居）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">智能停车场智慧支付（现支持ETCP/喜泊客）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前后排12V电源接口</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">扬声器数量</div>
+								<div class="model2"></div>
+								<div class="model3">6</div>
+							</div>
+							<div class="configLine1 textLeft">安全配置</div>
+							<div class="configLine3">
+								<div class="model1">前排正面SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">前排侧部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">左右帘式SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驾驶席膝部SRS空气囊</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">PVM全景监控系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">驻车雷达</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">ABS制动防抱死系统（带EBD电子制动力分配）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">VSC车身稳定性控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">上坡辅助控制系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">陡坡缓降系统</div>
+								<div class="model2"></div>
+								<div class="model3">-</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">TPMS胎压监测系统(带定位)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">发动机防盗锁止系统</div>
+								<div class="model2"></div>
+								<div class="model3">●(带警报）</div>
+							</div>
+							<div class="configLine1 textLeft">Toyota Safety Sense智行安全（丰田规避碰撞辅助套装）</div>
+							<div class="configLine3">
+								<div class="model1">PCS预碰撞安全系统(带前方行人识别)</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">DRCC动态雷达巡航控制系统（带全速域跟车功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">LTA车道循迹辅助系统（带跟车行驶功能）</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
+							</div>
+							<div class="configLine3">
+								<div class="model1">AHB自动调节远光灯系统</div>
+								<div class="model2"></div>
+								<div class="model3">●</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- 如果需要分页器 -->
-				<div class="swiper-pagination swiper-pagination2"></div>
 			</div>
 		</div>
 	</div>
