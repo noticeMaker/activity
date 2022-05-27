@@ -18,9 +18,9 @@ $(function () {
 		$('.configMsgSmBox').scrollTop(0);
 	});
 
-	const apiUrl = 'http://127.0.0.1:3000'
+	// const apiUrl = 'http://127.0.0.1:3000'
 
-	// const apiUrl = document.location.origin
+	const apiUrl = document.location.origin
 
 	const tokenName = 'rav4'
 	function fetchStatic(payload) {
