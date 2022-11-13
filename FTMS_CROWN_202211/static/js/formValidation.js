@@ -37,7 +37,7 @@ $(function () {
 				}
 			},
 			error: function (data) {
-				var errors = data.responseJSON.errors
+				var errors = data.responseJSON.errors || {}
 				alert({}, errors.message)
 			}
 		})
@@ -68,6 +68,17 @@ $(function () {
 			})
 		}
 	})
+
+	// fetchStatic({
+	// 	url: "/api/clue/getSeries",
+	// 	data: {
+	// 		configKey: tokenName,
+	// 		provinceCode: this.value
+	// 	},
+	// 	callback: function (data) {
+
+	// 	}
+	// })
 
 	$('#province').on('change', function (val) {
 
