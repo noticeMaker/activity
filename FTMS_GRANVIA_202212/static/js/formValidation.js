@@ -19,9 +19,9 @@ $(function () {
 		$('.configMsgSmBox').scrollTop(0);
 	});
 
-	const apiUrl = 'http://127.0.0.1:3000'
+	// const apiUrl = 'http://127.0.0.1:3000'
 
-	// const apiUrl = document.location.origin
+	const apiUrl = document.location.origin
 
 	const tokenName = 'FTMS_GRANVIA_202212'
 	function fetchStatic(payload) {
@@ -71,16 +71,16 @@ $(function () {
 	})
 
 	// 车型
-	fetchStatic({
-		url: "/api/clue/getSeries",
-		data: {
-			configKey: tokenName,
-			provinceCode: this.value
-		},
-		callback: function (data) {
+	// fetchStatic({
+	// 	url: "/api/clue/getSeries",
+	// 	data: {
+	// 		configKey: tokenName,
+	// 		provinceCode: this.value
+	// 	},
+	// 	callback: function (data) {
 
-		}
-	})
+	// 	}
+	// })
 
 	$('#province').on('change', function (val) {
 
