@@ -1,0 +1,136 @@
+
+
+.layout {
+	max-width: 450px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header {
+	position: relative;
+}
+.header img {
+	width: 100%;
+	height: 100%;
+}
+
+.header .sign {
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+	z-index: 2;
+	color: #fff;
+	font-size: 12px;
+}
+
+.form-container {
+	width: 100%;
+	padding: 40px 20px;
+	background: url(../imgs/bg.jpg) no-repeat 0 0;
+	background-size: 100% 100%;
+	background-color: #272727;
+}
+
+.form-container .button {
+	width: 60%;
+	background-color: rgba(3, 44, 81, 1);
+	color:#fff;
+}
+.mui-form {
+	background: #fff;
+	border-radius: 4px;
+	padding: 25px;
+}
+.mui-form img {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.mui-textfield>label {
+	font-size: 14px;
+	color: #3e3a39;
+	overflow: hidden;
+}
+.mui-textfield>input {
+	font-size: 14px;
+	border-bottom: 1px solid #757575;
+}
+
+.mui-textfield input::placeholder {
+	color: #9b9595;
+	font-size: 12px;
+}
+
+.mui-select {
+	position: relative;
+}
+.mui-select .arrow {
+	position: absolute;
+	right: 8px;
+	top: 24px;
+	display: inline-block;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	width: 8px;
+	height: 8px;
+	border-color: #9b9595;
+	transform: rotate(45deg);
+}
+
+#trigger3 {
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+}
+.mui-select>select, #trigger3 {
+	color: #9b9595;
+	background-image: none;
+	font-size: 12px;
+	border-bottom: 1px solid #757575;
+}
+
+.mui-select>label {
+	color: #3e3a39;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.mui-select>label .arrow {
+	position: absolute;
+	right: 15px;
+	top: 0;
+	display: inline-block;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    width: 10px;
+    height: 10px;
+    border-color: #3e3a39;
+    transform: rotate(135deg);
+}
+
+.auth-label a {
+	color: #3e3a39;
+	font-size: 13px;
+}
+
+.mui-checkbox>label>input[type=checkbox] {
+	margin-top: 6px;
+}
+.mui-btn {
+	font-size: 14px;
+	color: #fff;
+	background-color: #165dff;
+	width: 100%;
+	height: 38px;
+	display: inline-block;
+	letter-spacing: 2px;
+	border-radius: 4px;
+}
+.mui-btn:hover {
+	background-color: #2b66f1;
+	color: #fff;
+}
+
+.required {
+	color: #f53f3f;
+	/* margin-left: 5px; */
+}
