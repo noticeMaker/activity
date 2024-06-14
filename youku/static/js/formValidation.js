@@ -125,10 +125,10 @@ $(function () {
 			alert("联系电话格式不正确！");
 			return
 		} else if (checkSelect(cityId)) {
-			alert("城市没有选择");
+			alert("请选择城市");
 			return
-		} else if (checkSelect(dealerId)) {
-			alert("经销商没有选择");
+		} else if (checkSelect(dealerId) || dealerId === '请选择经销商') {
+			alert("请选择经销商");
 			return
 		}
 
